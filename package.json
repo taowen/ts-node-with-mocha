@@ -1,11 +1,13 @@
 {
   "name": "test-ts-node",
   "devDependencies": {},
-  "scripts": {},
   "dependencies": {
     "@types/mocha": "^5.2.7",
     "mocha": "^7.0.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start-mocha-in-debug-mode": "node --inspect-brk=9961 node_modules/.bin/mocha -r ts-node/register 'test/**/*.spec.ts'"
   }
 }
